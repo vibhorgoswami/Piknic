@@ -21,6 +21,12 @@ buildscript {
     // Commons Lib
     ext.apache_common_io_version = '2.5'
     ext.apache_common_lang_version = '3.6'
+    // glide
+    ext.glide_version = '4.7.1'
+    // android lifecycle
+    ext.android_lifecycle_components_version = '2.0.0-rc02'
+    // material stepper
+    ext.material_stepper_version = '4.3.1'
     // testing
     ext.junit_version = '4.12'
     ext.test_runner_version = '1.1.0-alpha4'

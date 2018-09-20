@@ -10,6 +10,6 @@
     <color name="colorTextIcon">#FFFFFF</color>
 
     <color name="colorButtonPressed">#34495E</color>
-    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhite">#FFFFFF</color>
     <color name="colorDefaultBg">#673BB7</color>
 </resources>

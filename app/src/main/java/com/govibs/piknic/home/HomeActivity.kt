@@ -16,6 +16,7 @@ import com.govibs.core.ui.home.HomePresenter
 import com.govibs.core.ui.view.EndlessRecyclerViewOnScrollListener
 import com.govibs.core.utils.AppUtils
 import com.govibs.piknic.R
+import com.govibs.piknic.group.GroupActivity
 import com.govibs.piknic.home.adapter.HomeGroupRecyclerAdapter
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.content_home.*
@@ -34,6 +35,7 @@ class HomeActivity : AppCompatActivity(), HomeContract.View, SwipeRefreshLayout.
         private val TAB_LAYOUT_SPAN_SIZE = 2
         private val TAB_LAYOUT_ITEM_SPAN_SIZE = 1
         private const val PERMISSION_REQUEST_CODE_READ_CONTACTS = 100
+        private const val REQUEST_GROUP_ACTIVITY = 10
 
         fun createIntent(context: Context): Intent {
             return Intent(context, HomeActivity::class.java)
@@ -169,7 +171,7 @@ class HomeActivity : AppCompatActivity(), HomeContract.View, SwipeRefreshLayout.
     @AfterPermissionGranted(PERMISSION_REQUEST_CODE_READ_CONTACTS)
     fun startAddGroupActivity() {
         if (EasyPermissions.hasPermissions(this, android.Manifest.permission.READ_CONTACTS)) {
-
+            startActivityForResult(GroupActivity.createIntent(this), REQUEST_GROUP_ACTIVITY)
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
         } else {
             EasyPermissions.requestPermissions(this, getString(R.string.text_permission_contact_rationale),

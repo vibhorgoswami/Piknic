@@ -29,7 +29,13 @@
         <activity
             android:name=".home.HomeActivity"
             android:label="@string/title_activity_home"
+            android:configChanges="orientation|touchscreen|keyboard|keyboardHidden"
+            android:launchMode="singleTop"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".group.GroupActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|touchscreen|keyboard|keyboardHidden"
+            android:launchMode="singleTop"/>
     </application>
 
 </manifest>

@@ -40,6 +40,11 @@ dependencies {
     implementation "androidx.palette:palette:$androidx_support_version"
     implementation "androidx.transition:transition:$androidx_support_version"
 
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    kapt "com.github.bumptech.glide:compiler:$glide_version"
+    kapt "androidx.lifecycle:lifecycle-compiler:$android_lifecycle_components_version"
+    implementation "com.stepstone.stepper:material-stepper:$material_stepper_version"
+
     // Easy Permissions
     implementation "pub.devrel:easypermissions:$easy_permission_version"
 
