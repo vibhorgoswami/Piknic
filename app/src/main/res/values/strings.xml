@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Piknic</string>
     <string name="title_activity_home">Piknic</string>
+
+    <string name="text_group_title">Group Title</string>
+    <string name="text_group_total_contacts">Folks</string>
+    <string name="text_group_recently_visited_restaurant">Recently Visited</string>
+    <string name="text_group_schedule">Schedule</string>
+    <string name="text_group_update">Update</string>
+    <string name="text_group_delete">Delete</string>
 </resources>

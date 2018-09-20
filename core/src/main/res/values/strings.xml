@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">core</string>
+    <bool name="tablet">false</bool>
+
+    <string name="text_error_try_again">Try Again</string>
+    <string name="text_error_add">Add</string>
+    <string name="text_error_add_group">Add contacts your piknic party.</string>
+    <string name="text_error_empty">No items to display</string>
+
+    <string name="text_permission_contact_rationale">Creating a piknic lunch requires adding contacts to a group.</string>
 </resources>

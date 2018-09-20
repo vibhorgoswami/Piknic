@@ -36,6 +36,12 @@ dependencies {
     implementation "androidx.appcompat:appcompat:$androidx_support_version"
     implementation "com.google.android.material:material:$androidx_support_version"
     implementation "androidx.constraintlayout:constraintlayout:$constraint_version"
+    implementation "androidx.cardview:cardview:$androidx_support_version"
+    implementation "androidx.palette:palette:$androidx_support_version"
+    implementation "androidx.transition:transition:$androidx_support_version"
+
+    // Easy Permissions
+    implementation "pub.devrel:easypermissions:$easy_permission_version"
 
     // chips
     implementation "com.github.pchmn:MaterialChipsInput:$material_chip_version"
