@@ -8,4 +8,9 @@
     <string name="text_group_schedule">Schedule</string>
     <string name="text_group_update">Update</string>
     <string name="text_group_delete">Delete</string>
+    <string name="text_start_typing_to_add_friends">Start typing to add friends.</string>
+
+    <string name="text_contact_person">Contact</string>
+    <string name="text_contact_title">Person Name</string>
+    <string name="text_contact_phone">Phone</string>
 </resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="1dp"
+    app:cardPreventCornerOverlap="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <ImageView
+            android:id="@+id/ivContactUserImage"
+            android:src="@drawable/ic_contact_user_white_24dp"
+            android:background="@drawable/bg_contact_user_icon"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/text_contact_person"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_alignTop="@+id/ivContactUserImage"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/ivContactUserImage"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvContactName"
+                style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_thin"
+                android:maxLines="1"
+                android:text="@string/text_contact_title" />
+
+            <TextView
+                android:id="@+id/tvContactPhoneNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_phone_generic_24dp"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/roboto_thin"
+                android:gravity="center"
+                android:text="@string/text_contact_phone"
+                style="@style/TextAppearance.MaterialComponents.Subtitle2"
+                android:maxLines="1"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDefaultBg" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

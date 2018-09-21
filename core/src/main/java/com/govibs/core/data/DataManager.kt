@@ -8,8 +8,6 @@ import com.govibs.core.data.model.ContactModel
 import com.govibs.core.data.model.GroupModel
 import com.govibs.core.data.storage.DbHelper
 import io.reactivex.Single
-import java.util.*
-import kotlin.collections.ArrayList
 
 
 class DataManager private constructor() {
@@ -37,7 +35,7 @@ class DataManager private constructor() {
 
 
     @WorkerThread
-    fun getContactList(context: Context): List<ContactModel> {
+    fun getContactList(context: Context): ArrayList<ContactModel> {
         val contactModelList = ArrayList<ContactModel>()
         var cursor: Cursor? = null
         try {

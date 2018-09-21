@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDefaultBg">
+
+    <RelativeLayout
+        android:id="@+id/rlChipLayout"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_margin="8dp"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:id="@+id/ivChipSearchIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search_generic_24dp"
+            android:contentDescription="@string/text_start_typing_to_add_friends"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"/>
+
+        <com.pchmn.materialchips.ChipsInput
+            android:id="@+id/mChipInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ivChipSearchIcon"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            app:hint="@string/text_start_typing_to_add_friends"
+            app:hintColor="@color/colorAccent"
+            app:textColor="@color/colorPrimary"
+            android:padding="5dp"
+            app:maxRows="5"
+            app:chip_labelColor="@color/colorPrimaryDark"
+            app:chip_hasAvatarIcon="true"
+            app:chip_backgroundColor="@android:color/white"
+            app:chip_deletable="true"
+            app:chip_deleteIconColor="@color/colorAccent"
+            app:chip_detailed_deleteIconColor="@android:color/white"
+            app:filterable_list_backgroundColor="@android:color/white"
+            app:filterable_list_textColor="@color/colorAccent" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvContactList"
+        android:layout_below="@+id/rlChipLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        tools:listitem="@layout/layout_contact_card"/>
+
+</RelativeLayout>
